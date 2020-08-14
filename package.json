@@ -1,0 +1,26 @@
+{
+  "name": "kh-tool",
+  "version": "0.0.1",
+  "description": "前端工具库",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wsz7777/kh-tool.git"
+  },
+  "keywords": [
+    "function",
+    "tool",
+    "fontend",
+    "fe",
+    "lodash"
+  ],
+  "author": "wsz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wsz7777/kh-tool/issues"
+  },
+  "homepage": "https://github.com/wsz7777/kh-tool#readme"
+}
