@@ -1,9 +1,12 @@
 {
   "name": "kh-tool",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "前端工具库",
-  "main": "src/index.ts",
+  "main": "dist/kh-tool.cjs.js",
+  "module": "dist/kh-tool.esm.js",
   "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +25,12 @@
   "bugs": {
     "url": "https://github.com/wsz7777/kh-tool/issues"
   },
-  "homepage": "https://github.com/wsz7777/kh-tool#readme"
+  "homepage": "https://github.com/wsz7777/kh-tool#readme",
+  "devDependencies": {
+    "rollup": "^2.25.0",
+    "rollup-plugin-sourcemaps": "^0.6.2",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^2.0.1",
+    "typescript": "^3.9.7"
+  }
 }
