@@ -1,36 +1,33 @@
 {
   "compilerOptions": {
+    /* 基础配置 */
     "target": "esnext",
     "module": "esnext",
-    // "strict": true,
-    "jsx": "preserve",
-    "importHelpers": true,
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "removeComments": false,
+    "declaration": true,
     "sourceMap": true,
+    "jsx": "preserve",
+
+    /* 强类型检查配置 */
+    "strict": true,
+    "noImplicitAny": false,
+
+    /* 模块分析配置 */
     "baseUrl": ".",
-    "types": [
-      "jest"
-    ],
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+    "outDir": "./lib",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["jest"],
+    // "paths": {
+    //   "@/*": ["src/*"]
+    // }
   },
-  "include": [
-    "src/**/*.ts",
-    "tests/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*.ts", "tests/**/*.ts"],
+  "exclude": ["node_modules","lib"]
 }
