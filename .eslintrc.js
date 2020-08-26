@@ -1,7 +1,7 @@
 module.exports = {
   // extends: ["plugin:import/errors"],
   // plugins: ["import"],
-  // parser: "@typescript-eslint/parser", // 使用 ts 解析器
+  parser: "@typescript-eslint/parser", // 使用 ts 解析器
   extends: [
     "eslint:recommended", // eslint 推荐规则
     "plugin:@typescript-eslint/recommended", // ts 推荐规则
@@ -14,7 +14,8 @@ module.exports = {
     browser: true,
   },
   parserOptions: {
-    ecmaVersion: 6,
+    project: "./tsconfig.json",
+    ecmaVersion: 2019,
     sourceType: "module",
     ecmaFeatures: {
       impliedStrict: true,
@@ -23,5 +24,6 @@ module.exports = {
   },
   rules: {
     "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/no-explicit-any": 0,
   },
 };

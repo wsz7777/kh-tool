@@ -23,11 +23,11 @@
     "importHelpers": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["jest"],
+    // "types": ["jest"],
     // "paths": {
     //   "@/*": ["src/*"]
     // }
   },
-  "include": ["src/**/*.ts", "tests/**/*.ts"],
+  "include": ["src/**/*.ts", "test/**/*.ts"],
   "exclude": ["node_modules","lib"]
 }
