@@ -38,7 +38,7 @@ const rollupConfig = {
       throwOnError: true, // lint 结果有错误将会抛出异常
       throwOnWarning: true,
       include: ["src/**/*.ts"],
-      exclude: ["node_modules/**", "lib/**", "*.js"],
+      exclude: ["node_modules/**", "lib/**", "*.js", "test/**"],
     }),
 
     // 使得 rollup 支持 commonjs 规范，识别 commonjs 规范的依赖
