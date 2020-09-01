@@ -1,10 +1,10 @@
 {
   "name": "kh-tool",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "前端工具库",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
-  "types": "lib/index.d.ts",
+  "types": "lib/src/index.d.ts",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",

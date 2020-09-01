@@ -28,6 +28,6 @@
     //   "@/*": ["src/*"]
     // }
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "lib", "test"]
+  "include": ["src/**/*.ts", "test"],
+  "exclude": ["node_modules", "lib"]
 }
