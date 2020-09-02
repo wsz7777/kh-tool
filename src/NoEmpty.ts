@@ -12,9 +12,7 @@ export function NoEmpty(value: any): boolean {
     return false;
   }
 
-  if (
-    Object.prototype.toString.call(value).toLowerCase() === "[object string]"
-  ) {
+  if (typeof value === "string") {
     value = value.replace(/\s/g, "");
     if (value == "") {
       return false;
