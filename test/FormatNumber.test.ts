@@ -34,12 +34,12 @@ describe("FormatNumber2Decimal:", () => {
   });
   test("1234567890.222  , 0", () => {
     expect(FormatNumber2Decimal("1234567890.222", 0)).toEqual(
-      "1,234,567,890.00"
+      "1,234,567,890.22"
     );
   });
   test("1234567890.222  , 22", () => {
     expect(FormatNumber2Decimal("1234567890.222", 22)).toEqual(
-      "1,234,567,890.00"
+      "1,234,567,890.22"
     );
   });
 });
