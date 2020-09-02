@@ -1,11 +1,12 @@
-export * from "./FileToBase64";
-export * from "./FileToArrayBuffer";
+export * from "./base/FileToBase64";
+export * from "./base/FileToArrayBuffer";
 
-export * from "./GetType";
-export * from "./NoEmptyArr";
-export * from "./NoEmpty";
-export * from "./IsJsonString";
+export * from "./base/GetType";
+export * from "./base/NoEmptyArr";
+export * from "./base/NoEmpty";
+export * from "./base/IsJsonString";
 
-export * from "./IdRandom";
-export * from "./FormatNumber";
+export * from "./base/IdRandom";
+export * from "./base/FormatNumber";
 
+export * from "./function/ZipImg";
