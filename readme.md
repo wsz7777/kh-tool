@@ -15,4 +15,4 @@ IdRandom()
 ```
 
 ## doc
-(说明文档看这里~)[http://vscode.wang:8080/modules/_src_index_.html]
+[说明文档看这里~](http://vscode.wang:8080/modules/_src_index_.html)
