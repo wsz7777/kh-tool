@@ -7,7 +7,7 @@ import { MegaPixImage } from "./MegaPixImage";
  * @param options.max_width 设置压缩的图片的最长边
  * @param options.quality 压缩质量
  */
-export function ZipImg(
+export function MinImg(
   image: HTMLImageElement,
   options = { max_width: 750, quality: 0.8 }
 ) {
@@ -42,4 +42,41 @@ export function ZipImg(
   const imgFile = canvas.toDataURL("image/png", quality);
   // let imgFile = canvas.toDataURL("image/webp",quality);
   return Base64ToFile(imgFile);
+}
+
+/**
+ * @description 压缩图片
+ * @param { File } file 文件
+ * @use 读取文件方法示例
+```
+async getFile(e) {
+  const file = e.target.files[0];
+  let zipFile = await getZipImg(file);
+  console.log(zipFile);
+}
+```
+*/
+export function ZipImg(file: File, options = { max_width: 750, quality: 0.8 }) {
+  const reading = new FileReader();
+  const imageObj: HTMLImageElement = new Image();
+
+  return new Promise((resolve, reject) => {
+    reading.onload = (event) => {
+      const rst = event.target?.result as string;
+
+      imageObj.src = rst;
+
+      imageObj.onload = () => {
+        const ImgFile = MinImg(imageObj, options);
+
+        return resolve(ImgFile);
+      };
+    };
+
+    reading.onerror = () => {
+      reject(new Error("图片加载失败"));
+    };
+
+    reading.readAsDataURL(file);
+  });
 }
