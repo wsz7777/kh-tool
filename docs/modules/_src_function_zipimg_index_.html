@@ -70,6 +70,12 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/_src_function_zipimg_index_.zipoptions.html" class="tsd-kind-icon">Zip<wbr>Options</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
@@ -86,13 +92,13 @@
 					<a name="minimg" class="tsd-anchor"></a>
 					<h3>Min<wbr>Img</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">Min<wbr>Img<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLImageElement</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>max_width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>quality<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">File</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Blob</span></li>
+						<li class="tsd-signature tsd-kind-icon">Min<wbr>Img<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLImageElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_src_function_zipimg_index_.zipoptions.html" class="tsd-signature-type">ZipOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">File</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Blob</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/b499239/src/function/ZipImg/index.ts#L10">src/function/ZipImg/index.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/637e5b8/src/function/ZipImg/index.ts#L17">src/function/ZipImg/index.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -111,21 +117,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-symbol">{ </span>max_width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>quality<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = { max_width: 750, quality: 0.8 }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>max_<wbr>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-											<div class="tsd-comment tsd-typography">
-												<p>设置压缩的图片的最长边</p>
-											</div>
-										</li>
-										<li class="tsd-parameter">
-											<h5>quality<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-											<div class="tsd-comment tsd-typography">
-												<p>压缩质量</p>
-											</div>
-										</li>
-									</ul>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../interfaces/_src_function_zipimg_index_.zipoptions.html" class="tsd-signature-type">ZipOptions</a><span class="tsd-signature-symbol"> = {}</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">File</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Blob</span></h4>
@@ -136,13 +128,13 @@
 					<a name="zipimg" class="tsd-anchor"></a>
 					<h3>Zip<wbr>Img</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">Zip<wbr>Img<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">File</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>max_width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>quality<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">File</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Blob</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Zip<wbr>Img<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">File</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_src_function_zipimg_index_.zipoptions.html" class="tsd-signature-type">ZipOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">File</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Blob</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/b499239/src/function/ZipImg/index.ts#L64">src/function/ZipImg/index.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/637e5b8/src/function/ZipImg/index.ts#L69">src/function/ZipImg/index.ts:69</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -169,15 +161,7 @@ console.log(zipFile);
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-symbol">{ </span>max_width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>quality<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = { max_width: 750, quality: 0.8 }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>max_<wbr>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>quality<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-									</ul>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../interfaces/_src_function_zipimg_index_.zipoptions.html" class="tsd-signature-type">ZipOptions</a><span class="tsd-signature-symbol"> = { quality: 0.8 }</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">File</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Blob</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -220,7 +204,7 @@ console.log(zipFile);
 						<a href="_src_base_noemptyarr_.html">&quot;src/base/<wbr>NoEmpty<wbr>Arr&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="_src_base_str2base64_.html">&quot;src/base/<wbr>Str2<wbr>Base64&quot;</a>
+						<a href="_src_base_strtobase64_.html">&quot;src/base/<wbr>Str<wbr>ToBase64&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="_src_function_zipimg_megapiximage_.html">&quot;src/function/<wbr>Zip<wbr>Img/<wbr>Mega<wbr>Pix<wbr>Image&quot;</a>
@@ -235,6 +219,9 @@ console.log(zipFile);
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/_src_function_zipimg_index_.zipoptions.html" class="tsd-kind-icon">Zip<wbr>Options</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_src_function_zipimg_index_.html#minimg" class="tsd-kind-icon">Min<wbr>Img</a>
 					</li>
@@ -253,6 +240,9 @@ console.log(zipFile);
 			<ul class="tsd-legend">
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
