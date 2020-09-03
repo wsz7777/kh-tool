@@ -1,4 +1,4 @@
-import { FormatNumber, FormatNumber2Decimal } from "../src";
+import { FormatNumber, FormatNumber2Decimal } from "../../src";
 
 describe("FormatNumber:", () => {
   test("less", () => {

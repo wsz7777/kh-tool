@@ -1,4 +1,4 @@
-import { IsJsonString } from "../src";
+import { IsJsonString } from "../../src";
 
 describe("IsJsonString:", () => {
   test("empty string", () => {

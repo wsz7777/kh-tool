@@ -1,4 +1,4 @@
-import { NoEmpty } from "../src";
+import { NoEmpty } from "../../src";
 
 describe("NoEmpty:", () => {
   test("empty string", () => {

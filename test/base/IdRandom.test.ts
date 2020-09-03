@@ -1,4 +1,4 @@
-import { IdRandom } from "../src";
+import { IdRandom } from "../../src";
 
 describe("NoEmptyArr:", () => {
   test("10000", () => {

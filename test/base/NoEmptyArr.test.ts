@@ -1,4 +1,4 @@
-import { NoEmptyArr } from "../src";
+import { NoEmptyArr } from "../../src";
 
 describe("NoEmptyArr:", () => {
   test("empty string", () => {

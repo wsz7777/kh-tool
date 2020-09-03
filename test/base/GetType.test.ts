@@ -1,4 +1,4 @@
-import { GetType, GetTypeOf } from "../src";
+import { GetType, GetTypeOf } from "../../src";
 
 describe("GetType:", () => {
   test("empty string", () => {
