@@ -1,30 +1,35 @@
 import { Base64ToFile } from "../../base/Base64ToFile";
 import { MegaPixImage } from "./MegaPixImage";
 
+interface ZipOptions {
+  /** 最长边的长度 */
+  max_length?: number;
+  /** 压缩质量 0 ~ 1 之间*/
+  quality?: number;
+}
+
 /**
  * @description 图片压缩的最核心的步骤——压缩
  * @param image Image对象 dom
- * @param options.max_width 设置压缩的图片的最长边
+ * @param options.max_length 设置压缩的图片的最长边
  * @param options.quality 压缩质量
  */
-export function MinImg(
-  image: HTMLImageElement,
-  options = { max_width: 750, quality: 0.8 }
-) {
-  const { max_width, quality } = options;
+export function MinImg(image: HTMLImageElement, options: ZipOptions = {}) {
+  const { max_length, quality } = options;
   const canvas = document.createElement("canvas");
   let c_width = image.width;
   let c_height = image.height;
-  let bl: number;
 
-  if (c_width > 300 && c_height > 300) {
+  if (max_length) {
+    let bl: number;
+
     if (c_width > c_height) {
       bl = c_width / c_height;
-      c_width = max_width;
+      c_width = max_length;
       c_height = c_width / bl;
     } else {
       bl = c_height / c_width;
-      c_height = max_width;
+      c_height = max_length;
       c_width = c_height / bl;
     }
   }
@@ -61,14 +66,11 @@ async getFile(e) {
 }
 ```
 */
-export function ZipImg(
-  file: File,
-  options = { max_width: 750, quality: 0.8 }
-): Promise<File | Blob> {
+export function ZipImg(file: File, options: ZipOptions = { quality: 0.8 }) {
   const reading = new FileReader();
   const imageObj: HTMLImageElement = new Image();
 
-  return new Promise((resolve, reject) => {
+  return new Promise<Blob | File>((resolve, reject) => {
     reading.onload = (event) => {
       const rst = event.target?.result as string;
 
