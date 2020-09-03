@@ -6,7 +6,7 @@
 export function Base64ToFile(
   base64: string,
   getFile = true
-): File | Blob | string {
+): File | Blob | Error {
   try {
     const [typeStr, atobStr] = base64.split(",");
     const matchRst = typeStr.match(/:(.*?);/);
@@ -29,6 +29,6 @@ export function Base64ToFile(
       ? new File([u8arr], filename, { type: mime })
       : new Blob([u8arr], { type: mime });
   } catch (error) {
-    return error.toString();
+    return error;
   }
 }

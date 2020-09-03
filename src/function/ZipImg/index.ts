@@ -41,7 +41,12 @@ export function MinImg(
   // const imgFile = canvas.toDataURL("image/jpeg", quality);
   const imgFile = canvas.toDataURL("image/png", quality);
   // let imgFile = canvas.toDataURL("image/webp",quality);
-  return Base64ToFile(imgFile);
+  const getZipRstFile = Base64ToFile(imgFile);
+  if (getZipRstFile instanceof File || getZipRstFile instanceof Blob) {
+    return getZipRstFile;
+  } else {
+    throw getZipRstFile;
+  }
 }
 
 /**
@@ -56,7 +61,10 @@ async getFile(e) {
 }
 ```
 */
-export function ZipImg(file: File, options = { max_width: 750, quality: 0.8 }) {
+export function ZipImg(
+  file: File,
+  options = { max_width: 750, quality: 0.8 }
+): Promise<File | Blob> {
   const reading = new FileReader();
   const imageObj: HTMLImageElement = new Image();
 
