@@ -1,6 +1,6 @@
 {
   "name": "kh-tool",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "前端工具库",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -43,5 +43,8 @@
     "rollup-plugin-typescript2": "^0.27.2",
     "ts-jest": "^26.2.0",
     "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "crypto-js": "^4.0.0"
   }
 }
