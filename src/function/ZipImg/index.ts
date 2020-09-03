@@ -41,7 +41,7 @@ export function MinImg(image: HTMLImageElement, options: ZipOptions = {}) {
   // context.drawImage(imageObj, 0, 0, c_width, c_height);
 
   const mpimg = new MegaPixImage(image);
-  mpimg.render(canvas, { width: c_width, height: c_height });
+  mpimg.render(canvas, { width: c_width, height: c_height, quality });
 
   // const imgFile = canvas.toDataURL("image/jpeg", quality);
   const imgFile = canvas.toDataURL("image/png", quality);
