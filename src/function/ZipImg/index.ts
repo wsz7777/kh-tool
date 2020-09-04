@@ -57,15 +57,28 @@ export function MinImg(image: HTMLImageElement, options: ZipOptions = {}) {
 
 /**
  * @description 压缩图片
- * @param { File } file 文件
+ * @param file 文件
+ * @param options 文件
  * @use 读取文件方法示例
-```
-async getFile(e) {
-  const file = e.target.files[0];
-  let zipFile = await getZipImg(file);
-  console.log(zipFile);
-}
-```
+ * js async写法
+ * ```js
+ * async getFile(e) {
+ *   const file = e.target.files[0];
+ *   let zipFile = await getZipImg(file);
+ *   console.log(zipFile);
+ * }
+ * ```
+ * ts Promise链写法
+ * ```ts
+ * getFile(e: any) {
+ *   const file = e.target.files[0];
+ *   console.log(file); // 压缩前
+ *   ZipImg(file, { quality: 0.1, type: "image/webp" })
+ *     .then((resp: File | Blob) => {
+ *       console.log(resp); // 压缩后
+ *     })
+ * }
+ * ```
 */
 export function ZipImg(file: File, options: ZipOptions = { quality: 0.8 }) {
   const reading = new FileReader();

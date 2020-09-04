@@ -74,7 +74,8 @@ function renderImageToDataURL(
 ): string {
   const canvas = document.createElement("canvas");
   renderImageToCanvas(img, canvas, options, doSquash);
-  return canvas.toDataURL(options.type, options.quality || 0.8);
+  // return canvas.toDataURL("image/jpeg", options.quality || 0.8);
+  return canvas.toDataURL(options, options.quality || 0.8);
 }
 
 /**

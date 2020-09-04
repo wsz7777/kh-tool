@@ -100,7 +100,7 @@
 					<div class="tsd-signature tsd-kind-icon">Image<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"image/jpeg"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"image/png"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"image/webp"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/3e664bd/src/function/ZipImg/index.ts#L4">src/function/ZipImg/index.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/a9a7e05/src/function/ZipImg/index.ts#L4">src/function/ZipImg/index.ts:4</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -117,7 +117,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/3e664bd/src/function/ZipImg/index.ts#L21">src/function/ZipImg/index.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/a9a7e05/src/function/ZipImg/index.ts#L21">src/function/ZipImg/index.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -153,7 +153,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/3e664bd/src/function/ZipImg/index.ts#L70">src/function/ZipImg/index.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/a9a7e05/src/function/ZipImg/index.ts#L83">src/function/ZipImg/index.ts:83</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -162,11 +162,21 @@
 									<dd><p>压缩图片</p>
 									</dd>
 									<dt>use</dt>
-									<dd><p>读取文件方法示例</p>
-										<pre><code><span class="hljs-function"><span class="hljs-keyword">async</span> <span class="hljs-title">getFile</span>(<span class="hljs-params">e</span>)</span> {
-<span class="hljs-keyword">const</span> file = e.target.files[<span class="hljs-number">0</span>];
-<span class="hljs-keyword">let</span> zipFile = <span class="hljs-keyword">await</span> getZipImg(file);
-console.log(zipFile);
+									<dd><p>读取文件方法示例
+										js async写法</p>
+										<pre><code class="language-js"><span class="hljs-keyword">async</span> getFile(e) {
+  <span class="hljs-keyword">const</span> file = e.target.files[<span class="hljs-number">0</span>];
+  <span class="hljs-keyword">let</span> zipFile = <span class="hljs-keyword">await</span> getZipImg(file);
+  <span class="hljs-built_in">console</span>.log(zipFile);
+}</code></pre>
+										<p>ts Promise链写法</p>
+										<pre><code class="language-ts">getFile(e: <span class="hljs-built_in">any</span>) {
+  <span class="hljs-keyword">const</span> file = e.target.files[<span class="hljs-number">0</span>];
+  <span class="hljs-built_in">console</span>.log(file); <span class="hljs-comment">// 压缩前</span>
+  ZipImg(file, { quality: <span class="hljs-number">0.1</span>, <span class="hljs-keyword">type</span>: <span class="hljs-string">&quot;image/webp&quot;</span> })
+    .then(<span class="hljs-function">(<span class="hljs-params">resp: File | Blob</span>) =&gt;</span> {
+      <span class="hljs-built_in">console</span>.log(resp); <span class="hljs-comment">// 压缩后</span>
+    })
 }</code></pre>
 									</dd>
 								</dl>
@@ -181,6 +191,9 @@ console.log(zipFile);
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../interfaces/_src_function_zipimg_index_.zipoptions.html" class="tsd-signature-type">ZipOptions</a><span class="tsd-signature-symbol"> = { quality: 0.8 }</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>文件</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">File</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Blob</span><span class="tsd-signature-symbol">&gt;</span></h4>
