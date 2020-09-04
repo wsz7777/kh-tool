@@ -18,9 +18,14 @@ const rollupConfig = {
   output: [
     {
       file: getOutput("index.js"),
-      format: "es",
+      format: "cjs",
       name: pkg.name,
     },
+    {
+      file: getOutput("index.esm.js"),
+      format: "es",
+      name: pkg.name,
+    }
   ],
   external: ["crypto-js"],
   plugins: [
