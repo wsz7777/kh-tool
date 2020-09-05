@@ -81,7 +81,9 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_src_base_strtobase64_.html#strfrombase64" class="tsd-kind-icon">Str<wbr>From<wbr>Base64</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_src_base_strtobase64_.html#strfromurlstr" class="tsd-kind-icon">Str<wbr>From<wbr>Url<wbr>Str</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_src_base_strtobase64_.html#strtobase64" class="tsd-kind-icon">Str<wbr>ToBase64</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_src_base_strtobase64_.html#strtourlstr" class="tsd-kind-icon">Str<wbr>ToUrl<wbr>Str</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,7 +97,7 @@
 					<div class="tsd-signature tsd-kind-icon">Base64<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Encoder</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/a9a7e05/src/base/StrToBase64.ts#L2">src/base/StrToBase64.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/1e3a03e/src/base/StrToBase64.ts#L2">src/base/StrToBase64.ts:2</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -105,7 +107,7 @@
 					<div class="tsd-signature tsd-kind-icon">Utf8<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Encoder</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/a9a7e05/src/base/StrToBase64.ts#L2">src/base/StrToBase64.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/1e3a03e/src/base/StrToBase64.ts#L2">src/base/StrToBase64.ts:2</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -114,7 +116,7 @@
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="strfrombase64" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Str<wbr>From<wbr>Base64</h3>
+					<h3>Str<wbr>From<wbr>Base64</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 						<li class="tsd-signature tsd-kind-icon">Str<wbr>From<wbr>Base64<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
@@ -122,7 +124,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/a9a7e05/src/base/StrToBase64.ts#L7">src/base/StrToBase64.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/1e3a03e/src/base/StrToBase64.ts#L8">src/base/StrToBase64.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -136,8 +138,36 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="strfromurlstr" class="tsd-anchor"></a>
+					<h3>Str<wbr>From<wbr>Url<wbr>Str</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">Str<wbr>From<wbr>Url<wbr>Str<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/1e3a03e/src/base/StrToBase64.ts#L18">src/base/StrToBase64.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>从url路径str解析原意专用</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>str: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="strtobase64" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Str<wbr>ToBase64</h3>
+					<h3>Str<wbr>ToBase64</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 						<li class="tsd-signature tsd-kind-icon">Str<wbr>ToBase64<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
@@ -145,9 +175,37 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/a9a7e05/src/base/StrToBase64.ts#L4">src/base/StrToBase64.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/1e3a03e/src/base/StrToBase64.ts#L4">src/base/StrToBase64.ts:4</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>str: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="strtourlstr" class="tsd-anchor"></a>
+					<h3>Str<wbr>ToUrl<wbr>Str</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">Str<wbr>ToUrl<wbr>Str<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/1e3a03e/src/base/StrToBase64.ts#L13">src/base/StrToBase64.ts:13</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>解析为url路径str专用</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -219,7 +277,13 @@
 						<a href="_src_base_strtobase64_.html#strfrombase64" class="tsd-kind-icon">Str<wbr>From<wbr>Base64</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_src_base_strtobase64_.html#strfromurlstr" class="tsd-kind-icon">Str<wbr>From<wbr>Url<wbr>Str</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_src_base_strtobase64_.html#strtobase64" class="tsd-kind-icon">Str<wbr>ToBase64</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_src_base_strtobase64_.html#strtourlstr" class="tsd-kind-icon">Str<wbr>ToUrl<wbr>Str</a>
 					</li>
 				</ul>
 			</nav>
