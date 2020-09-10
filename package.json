@@ -51,7 +51,8 @@
     "ypkgfiles": "^1.6.0"
   },
   "dependencies": {
-    "crypto-js": "^4.0.0"
+    "crypto-js": "^4.0.0",
+    "identity-obj-proxy": "^3.0.0"
   },
   "peerDependencies": {
     "crypto-js": ">=4.0.0"

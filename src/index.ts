@@ -1,4 +1,5 @@
 export * from "./base/FileToBase64";
+export * from "./base/Base64ToFile";
 export * from "./base/FileToArrayBuffer";
 
 export * from "./base/GetType";
