@@ -10,5 +10,6 @@ export * from "./base/IsJsonString";
 export * from "./base/IdRandom";
 export * from "./base/FormatNumber";
 export * from "./base/StrToBase64";
+export * from "./base/NameStyle";
 
 export * from "./function/ZipImg";
