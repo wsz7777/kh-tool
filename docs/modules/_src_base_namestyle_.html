@@ -88,7 +88,9 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_src_base_namestyle_.html#camel2kebab" class="tsd-kind-icon">Camel2<wbr>Kebab</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_src_base_namestyle_.html#camel2snake" class="tsd-kind-icon">Camel2<wbr>Snake</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_src_base_namestyle_.html#kebab2camel" class="tsd-kind-icon">Kebab2<wbr>Camel</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_src_base_namestyle_.html#kebab2lowercamel" class="tsd-kind-icon">Kebab2lower<wbr>Camel</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_src_base_namestyle_.html#snake2camel" class="tsd-kind-icon">Snake2<wbr>Camel</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_src_base_namestyle_.html#snake2lowercamel" class="tsd-kind-icon">Snake2lower<wbr>Camel</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,13 +102,13 @@
 					<a name="camel2kebab" class="tsd-anchor"></a>
 					<h3>Camel2<wbr>Kebab</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">Camel2<wbr>Kebab<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">Camel2<wbr>Kebab<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/c93289d/src/base/NameStyle.ts#L18">src/base/NameStyle.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/34b6a6e/src/base/NameStyle.ts#L35">src/base/NameStyle.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -117,10 +119,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>s: <span class="tsd-signature-type">any</span></h5>
+									<h5>s: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -128,13 +130,13 @@
 					<a name="camel2snake" class="tsd-anchor"></a>
 					<h3>Camel2<wbr>Snake</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">Camel2<wbr>Snake<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">Camel2<wbr>Snake<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/c93289d/src/base/NameStyle.ts#L30">src/base/NameStyle.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/34b6a6e/src/base/NameStyle.ts#L40">src/base/NameStyle.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -145,10 +147,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>s: <span class="tsd-signature-type">any</span></h5>
+									<h5>s: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -156,27 +158,55 @@
 					<a name="kebab2camel" class="tsd-anchor"></a>
 					<h3>Kebab2<wbr>Camel</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">Kebab2<wbr>Camel<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">Kebab2<wbr>Camel<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/c93289d/src/base/NameStyle.ts#L11">src/base/NameStyle.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/34b6a6e/src/base/NameStyle.ts#L11">src/base/NameStyle.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>短横线转换为驼峰</p>
+									<p>短横线转换为驼峰（大驼峰）</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>s: <span class="tsd-signature-type">any</span></h5>
+									<h5>s: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="kebab2lowercamel" class="tsd-anchor"></a>
+					<h3>Kebab2lower<wbr>Camel</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">Kebab2lower<wbr>Camel<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/34b6a6e/src/base/NameStyle.ts#L18">src/base/NameStyle.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>短横线转换为小驼峰</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>s: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -184,13 +214,13 @@
 					<a name="snake2camel" class="tsd-anchor"></a>
 					<h3>Snake2<wbr>Camel</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">Snake2<wbr>Camel<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">Snake2<wbr>Camel<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/c93289d/src/base/NameStyle.ts#L23">src/base/NameStyle.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/34b6a6e/src/base/NameStyle.ts#L23">src/base/NameStyle.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -201,10 +231,38 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>s: <span class="tsd-signature-type">any</span></h5>
+									<h5>s: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="snake2lowercamel" class="tsd-anchor"></a>
+					<h3>Snake2lower<wbr>Camel</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">Snake2lower<wbr>Camel<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/34b6a6e/src/base/NameStyle.ts#L30">src/base/NameStyle.ts:30</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>下划线转换为小驼峰</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>s: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -272,7 +330,13 @@
 						<a href="_src_base_namestyle_.html#kebab2camel" class="tsd-kind-icon">Kebab2<wbr>Camel</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_src_base_namestyle_.html#kebab2lowercamel" class="tsd-kind-icon">Kebab2lower<wbr>Camel</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_src_base_namestyle_.html#snake2camel" class="tsd-kind-icon">Snake2<wbr>Camel</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_src_base_namestyle_.html#snake2lowercamel" class="tsd-kind-icon">Snake2lower<wbr>Camel</a>
 					</li>
 				</ul>
 			</nav>
