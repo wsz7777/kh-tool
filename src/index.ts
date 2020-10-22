@@ -6,6 +6,7 @@ export * from "./base/GetType";
 export * from "./base/NoEmptyArr";
 export * from "./base/NoEmpty";
 export * from "./base/IsJsonString";
+export * from "./base/DiffType";
 
 export * from "./base/IdRandom";
 export * from "./base/FormatNumber";
