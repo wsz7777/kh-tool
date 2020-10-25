@@ -25,7 +25,7 @@ const rollupConfig = {
       file: getOutput("index.esm.js"),
       format: "es",
       name: pkg.name,
-    }
+    },
   ],
   external: ["crypto-js"],
   plugins: [
@@ -45,6 +45,15 @@ const rollupConfig = {
       exclude: "node_modules/**",
       // babel 默认不支持 ts 需要手动添加
       extensions: [...DEFAULT_EXTENSIONS, ".ts"],
+      presets: [
+        [
+          "@babel/preset-env",
+          {
+            /* Babel 会在 Rollup 有机会做处理之前，将我们的模块转成 CommonJS，导致 Rollup 的一些处理失败 */
+            modules: false,
+          },
+        ],
+      ],
     }),
   ],
 };
