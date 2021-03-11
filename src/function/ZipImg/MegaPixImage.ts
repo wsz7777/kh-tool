@@ -192,12 +192,7 @@ function transformCoordinate(
   }
 }
 
-const URL =
-  window.URL && window.URL.createObjectURL
-    ? window.URL
-    : window.webkitURL && window.webkitURL.createObjectURL
-    ? window.webkitURL
-    : null;
+const URL = globalThis.URL || globalThis.webkitURL || null;
 
 /**
  * MegaPixImage class
@@ -209,7 +204,7 @@ export class MegaPixImage {
 
   constructor(param: HTMLImageElement | Blob) {
     let srcImage: HTMLImageElement;
-    if (window.Blob && param instanceof Blob) {
+    if (globalThis.Blob && param instanceof Blob) {
       if (!URL) {
         throw Error("No createObjectURL function found to create blob url");
       }

@@ -3,10 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;src/base/Base64ToFile&quot; | kh-tool</title>
+	<title>base/IdRandom | kh-tool</title>
 	<meta name="description" content="Documentation for kh-tool">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -40,8 +41,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -53,13 +52,13 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">kh-tool</a>
 				</li>
 				<li>
-					<a href="_src_base_base64tofile_.html">&quot;src/base/Base64ToFile&quot;</a>
+					<a href="base_idrandom.html">base/IdRandom</a>
 				</li>
 			</ul>
-			<h1>Module &quot;src/base/Base64ToFile&quot;</h1>
+			<h1>Module base/IdRandom</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +72,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_src_base_base64tofile_.html#base64tofile" class="tsd-kind-icon">Base64<wbr>ToFile</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="base_idrandom.html#idrandom" class="tsd-kind-icon">Id<wbr>Random</a></li>
 							</ul>
 						</section>
 					</div>
@@ -82,39 +81,25 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="base64tofile" class="tsd-anchor"></a>
-					<h3>Base64<wbr>ToFile</h3>
+					<a name="idrandom" class="tsd-anchor"></a>
+					<h3>Id<wbr>Random</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">Base64<wbr>ToFile<span class="tsd-signature-symbol">(</span>base64<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, getFile<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">File</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Blob</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span></li>
+						<li class="tsd-signature tsd-kind-icon">Id<wbr>Random<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/ddcc0f7/src/base/Base64ToFile.ts#L6">src/base/Base64ToFile.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/wsz7777/kh-tool/blob/0a569aa/src/base/IdRandom.ts#L1">base/IdRandom.ts:1</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>将base64转换为文件对象</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>base64: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>base64格式的编码</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> getFile: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>获得 File 的结果吗</p>
-									</div>
+									<h5>num: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 10</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">File</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Blob</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -123,60 +108,60 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="base_base64tofile.html">base/<wbr>Base64<wbr>ToFile</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="base_difftype.html">base/<wbr>Diff<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="base_filetoarraybuffer.html">base/<wbr>File<wbr>ToArray<wbr>Buffer</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="base_filetobase64.html">base/<wbr>File<wbr>ToBase64</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="base_formatnumber.html">base/<wbr>Format<wbr>Number</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="base_gettype.html">base/<wbr>Get<wbr>Type</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="_src_base_base64tofile_.html">&quot;src/base/<wbr>Base64<wbr>ToFile&quot;</a>
+						<a href="base_idrandom.html">base/<wbr>IdRandom</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="_src_base_difftype_.html">&quot;src/base/<wbr>Diff<wbr>Type&quot;</a>
+						<a href="base_isjsonstring.html">base/<wbr>IsJson<wbr>String</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="_src_base_filetoarraybuffer_.html">&quot;src/base/<wbr>File<wbr>ToArray<wbr>Buffer&quot;</a>
+						<a href="base_namestyle.html">base/<wbr>Name<wbr>Style</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="_src_base_filetobase64_.html">&quot;src/base/<wbr>File<wbr>ToBase64&quot;</a>
+						<a href="base_noempty.html">base/<wbr>NoEmpty</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="_src_base_formatnumber_.html">&quot;src/base/<wbr>Format<wbr>Number&quot;</a>
+						<a href="base_noemptyarr.html">base/<wbr>NoEmpty<wbr>Arr</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="_src_base_gettype_.html">&quot;src/base/<wbr>Get<wbr>Type&quot;</a>
+						<a href="base_strtobase64.html">base/<wbr>Str<wbr>ToBase64</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="_src_base_idrandom_.html">&quot;src/base/<wbr>IdRandom&quot;</a>
+						<a href="function_zipimg.html">function/<wbr>Zip<wbr>Img</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="_src_base_isjsonstring_.html">&quot;src/base/<wbr>IsJson<wbr>String&quot;</a>
+						<a href="function_zipimg_megapiximage.html">function/<wbr>Zip<wbr>Img/<wbr>Mega<wbr>Pix<wbr>Image</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="_src_base_namestyle_.html">&quot;src/base/<wbr>Name<wbr>Style&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="_src_base_noempty_.html">&quot;src/base/<wbr>NoEmpty&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="_src_base_noemptyarr_.html">&quot;src/base/<wbr>NoEmpty<wbr>Arr&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="_src_base_strtobase64_.html">&quot;src/base/<wbr>Str<wbr>ToBase64&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="_src_function_zipimg_megapiximage_.html">&quot;src/function/<wbr>Zip<wbr>Img/<wbr>Mega<wbr>Pix<wbr>Image&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="_src_function_zipimg_index_.html">&quot;src/function/<wbr>Zip<wbr>Img/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="_src_index_.html">&quot;src/index&quot;</a>
+						<a href="index.html">index</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_src_base_base64tofile_.html#base64tofile" class="tsd-kind-icon">Base64<wbr>ToFile</a>
+						<a href="base_idrandom.html#idrandom" class="tsd-kind-icon">Id<wbr>Random</a>
 					</li>
 				</ul>
 			</nav>
@@ -188,12 +173,7 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
