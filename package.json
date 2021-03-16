@@ -1,6 +1,6 @@
 {
   "name": "kh-tool",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "前端工具库",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -57,5 +57,7 @@
   "peerDependencies": {
     "crypto-js": ">=4.0.0"
   },
-  "files": []
+  "files": [
+    "lib"
+  ]
 }
