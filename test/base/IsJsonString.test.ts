@@ -7,6 +7,7 @@ describe("IsJsonString:", () => {
   test("string", () => {
     expect(IsJsonString("test")).toBe(false);
   });
+  // eslint-disable-next-line jest/valid-title
   test("  ", () => {
     expect(IsJsonString("  ")).toBe(false);
   });
