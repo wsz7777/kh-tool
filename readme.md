@@ -15,5 +15,5 @@ IdRandom()
 ```
 
 ## doc
-[说明文档看这里~ 线路1](http://vscode.wang:8080/index.html)
-[说明文档看这里~ 线路2](http://81.70.62.77:8080/index.html)
+[说明文档看这里~ 线路1](http://vscode.wang:8080/modules.html)
+[说明文档看这里~ 线路2](http://81.70.62.77:8080/modules.html)
