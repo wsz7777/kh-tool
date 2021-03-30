@@ -55,6 +55,7 @@ const rollupConfig = {
         ],
       ],
     }),
+    clear({ targets: ["lib/test"] }),
   ],
 };
 

@@ -1,6 +1,6 @@
 {
   "name": "kh-tool",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "前端工具库",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -58,6 +58,8 @@
     "crypto-js": ">=4.0.0"
   },
   "files": [
-    "lib"
+    "lib/src",
+    "lib/index.js",
+    "lib/index.esm.js"
   ]
 }
